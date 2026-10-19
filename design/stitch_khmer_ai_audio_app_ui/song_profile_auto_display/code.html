@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="km"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#d9e3f6", "inverse-surface": "#27313f", "on-error": "#ffffff", "primary-container": "#3db88f", "primary-fixed": "#83f8cb", "surface": "#f8f9ff", "on-surface": "#121c2a", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eaf1ff", "surface-container-high": "#dee9fc", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-secondary-fixed": "#001e2c", "on-secondary-container": "#004d6a", "primary-fixed-dim": "#65dbb0", "on-secondary": "#ffffff", "background": "#f8f9ff", "surface-tint": "#006c50", "on-secondary-fixed-variant": "#004c69", "outline-variant": "#bccac1", "on-primary-container": "#004330", "on-primary-fixed-variant": "#00513b", "primary": "#006c50", "on-primary-fixed": "#002116", "tertiary-container": "#91aaa2", "inverse-primary": "#65dbb0", "secondary-fixed-dim": "#7bd0ff", "on-surface-variant": "#3d4a43", "tertiary-fixed-dim": "#b3ccc3", "surface-container": "#e6eeff", "outline": "#6d7a73", "on-tertiary-fixed": "#081f1a", "error": "#ba1a1a", "surface-variant": "#d9e3f6", "secondary-fixed": "#c4e7ff", "surface-dim": "#d0dbed", "error-container": "#ffdad6", "tertiary-fixed": "#cee8df", "on-tertiary-container": "#283f39", "secondary": "#00668a", "surface-bright": "#f8f9ff", "secondary-container": "#40c2fd", "surface-container-low": "#eff4ff", "on-background": "#121c2a", "tertiary": "#4c635c", "on-tertiary-fixed-variant": "#344b45", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "1.75rem", "space-lg": "1.25rem", "margin": "1.25rem", "space-xs": "0.25rem", "space-md": "0.75rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt="Khmer Sonic AI Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1WiWCfWVZK9N04LQY4C5MZ05lircuTpeqOrdcH4TS8HlTmRagcrxNpFV4-_8STJo4GaMDbvSJaFi-V4umY5iAZPEz9Alcb1172TjwZ26L1IDo4HkWvYUjTs9YvsB5Gr90BSgYfOlsDWTE4oTLq3r9lBfDwGCHYlNBmxseQhklu1Y8v32qQHBvGT0nxU1ODvjI8Y9mRkHxmrlYAhU_cCkT8gw6pbCOb0_WtW05niwjOGVnJ2XoFGrL4d-tM"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Khmer Sonic AI</span><span class="w-2 h-2 rounded-full bg-primary-container shrink-0 animate-pulse"></span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">សំឡេង និងទំនុកច្រៀង AI • Home</span></div></div><div class="flex items-center gap-space-sm shrink-0"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high active:scale-95 transition-all text-on-surface-variant"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="relative flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC68rVMVDsJ7RqrybSX9TmLfaEKlBMPq76kDrt9bmFWL7o1JHE0yPCiO8ibMXEURk9gVOR9Aqh416UFJIpHFfvWfeP2Ia7qsS1Q3gsukfZvKZFJLqHXxnSF3z9LW6Awry05gFejbYJ3t-QytrA6w90oVBCXh7aItUOA2rEp-GSYxpB9B3Xp9fbrUOJz5GA7A0n9jJVN2TuQKAiasdVXe37jLvdBqutnfk6kL9M_fnjCpsFFDeBcFRK4Wg"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-primary rounded-full ring-1 ring-surface-container-lowest"></span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-8 space-y-5">
+<!-- Top Navigation & Status Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-space-sm">
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+          ស្ទូឌីយោ <span class="material-symbols-outlined text-[13px]">chevron_right</span> ប្រវត្តិរូបបទ
+        </span>
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">ព័ត៌មានលម្អិតបទចម្រៀង</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-container">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm font-semibold">AI Profile Live</span>
+</div>
+</div>
+<!-- Primary Song Profile Card (Elevated & Tactile) -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-4">
+<!-- Album Cover & Soundwave Badge -->
+<div class="relative w-full aspect-square max-h-72 rounded-DEFAULT overflow-hidden bg-surface-container-low flex items-center justify-center shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A modern Cambodian artistic album cover featuring an ethereal glowing crescent moon over a gentle calm river with serene water reflections, subtle ancient Khmer temple silhouette in the mist, soft mint green, pastel sky blue and warm gold tonal highlights, 3D ambient acoustic visualizer aesthetic, album art concept" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN4sFyFtU8uqU9UDYqN9Rxog96vRq9ul2FayHHET68ivcCFB_F3HxOQQgFS81wlsJCt7IurwVuFp3GlwSh6WkWfZI2qrjxcriY2RXP1rz0SVfQ5Tm3I9_412XwHuAW0YU-9v4kuwAPpTBIKZKwZU7JhdJEeAsWnrNgkhUI8FRkOb6gVCPtqfTxSbaV-Uj5T59adXkLi72MDIHQNSpzXPtuWUSbrqTrr4W-4KBHklIxvv-Vnxo-c6PPUw"/>
+<!-- Floating Glassmorphic Audio Spec Overlay -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[15px]">graphic_eq</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Mastered Hi-Res</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-secondary-container text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface">Khmer Sonic AI v3.5</span>
+</div>
+</div>
+<!-- Song Title & Singer Group with Inline Edit -->
+<div class="flex items-start justify-between gap-3 pt-1">
+<div class="flex flex-col min-w-0 flex-1">
+<!-- AI Detection Tag -->
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-sm text-label-sm tracking-wide">AI កំណត់សម្គាល់ស្វ័យប្រវត្តិ (Auto-Detected)</span>
+</div>
+<!-- Editable Song Title -->
+<h1 class="font-headline-md text-headline-md text-on-surface leading-snug tracking-tight" id="song-title-display">
+          ស្រមោលព្រះច័ន្ទលើស្ទឹងសង្កែ
+        </h1>
+<!-- Singer / Vocal Model Tag -->
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-outline text-[16px]">mic_external_on</span>
+<p class="font-body-md text-body-md text-on-surface-variant font-normal" id="artist-name-display">
+            សុធារី ជា <span class="text-outline text-label-sm font-light">• (Model: VoxCMP2 v2.1)</span>
+</p>
+</div>
+</div>
+<!-- Quick Edit Button -->
+<button aria-label="Edit Song Title and Artist" class="w-10 h-10 rounded-full bg-surface-container hover:bg-primary-fixed/40 text-on-surface-variant hover:text-primary flex items-center justify-center transition-all shrink-0 active:scale-95 shadow-sm" id="btn-quick-edit">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+</div>
+<!-- Quick Tags -->
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> មនោសញ្ចេតនា (Ballad)
+      </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">speed</span> 82 BPM
+      </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">piano</span> E Minor (សំឡេងកល្យាណ)
+      </span>
+</div>
+</div>
+<!-- Interactive State Switcher: Show Real vs Empty/Auto-Fetching State Demonstration -->
+<div class="bg-surface-container-low rounded-lg p-3 flex items-center justify-between gap-2 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">preview</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">សាកល្បងមើលស្ថានភាព AI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ប្តូរមើលទម្រង់កំពុងដំណើរការទាញទិន្នន័យ</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm active:scale-95" id="toggle-loading-state-btn">
+<span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+<span id="state-toggle-label">បង្ហាញការទាញយក</span>
+</button>
+</div>
+<!-- Empty / AI Auto-Fetching Demonstration Card (Conditionally toggled / interactive demo) -->
+<div class="hidden w-full bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-3" id="fetching-state-card">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[17px] animate-spin">progress_activity</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">ស្ថានភាពកំពុងទាញយកទិន្នន័យស្វ័យប្រវត្តិ</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Live AI Semantic Analysis &amp; Khmer Lyric Matching</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+        Processing
+      </span>
+</div>
+<!-- Placeholder Shimmer Title and Artist -->
+<div class="space-y-3 p-3 bg-surface-container-low rounded-DEFAULT">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline">ចំណងជើងចម្រៀង (Song Title):</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant/80 animate-pulse">
+            កំពុងទាញយកចំណងជើង... (Fetching Song Title...)
+          </span>
+<span class="flex h-2 w-2 rounded-full bg-primary-container animate-ping"></span>
+</div>
+<div class="w-3/4 h-2 rounded-full bg-surface-container-highest animate-pulse mt-1"></div>
+</div>
+<div class="space-y-1 pt-1">
+<span class="font-label-sm text-label-sm text-outline">ឈ្មោះអ្នកច្រៀង (Artist Name):</span>
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md text-on-surface-variant/70 animate-pulse">
+            កំពុងទាញយកឈ្មោះអ្នកច្រៀង... (Fetching Artist Name...)
+          </span>
+<span class="flex h-1.5 w-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+</div>
+<div class="w-1/2 h-2 rounded-full bg-surface-container-highest animate-pulse mt-1"></div>
+</div>
+</div>
+<!-- Audio Waveform Skeleton -->
+<div class="flex items-end justify-between h-9 px-3 gap-1 pt-2">
+<div class="w-1 bg-primary/30 rounded-full h-3 animate-pulse"></div>
+<div class="w-1 bg-primary/40 rounded-full h-6 animate-pulse"></div>
+<div class="w-1 bg-primary-container rounded-full h-8 animate-pulse"></div>
+<div class="w-1 bg-primary/30 rounded-full h-4 animate-pulse"></div>
+<div class="w-1 bg-primary/60 rounded-full h-7 animate-pulse"></div>
+<div class="w-1 bg-primary rounded-full h-9 animate-pulse"></div>
+<div class="w-1 bg-primary/40 rounded-full h-5 animate-pulse"></div>
+<div class="w-1 bg-primary-container rounded-full h-7 animate-pulse"></div>
+<div class="w-1 bg-primary/50 rounded-full h-4 animate-pulse"></div>
+<div class="w-1 bg-primary/20 rounded-full h-2 animate-pulse"></div>
+</div>
+</div>
+<!-- Audio Player & Live Waveform Scrubber -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">ការចាក់សាកល្បង Master</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/50 text-on-primary-fixed font-label-sm text-label-sm font-semibold">48kHz / 24-bit</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+<span>100%</span>
+</div>
+</div>
+<!-- Interactive Waveform Visualizer -->
+<div class="relative py-2 flex flex-col gap-1.5">
+<div class="h-14 flex items-center justify-between gap-1 px-1 cursor-pointer select-none">
+<!-- Synthetic Waveform Bars (mint elapsed, sky unplayed) -->
+<span class="w-1 h-4 rounded-full bg-primary-container"></span>
+<span class="w-1 h-7 rounded-full bg-primary"></span>
+<span class="w-1 h-10 rounded-full bg-primary-container"></span>
+<span class="w-1 h-12 rounded-full bg-primary"></span>
+<span class="w-1 h-8 rounded-full bg-primary-container"></span>
+<span class="w-1 h-5 rounded-full bg-primary"></span>
+<span class="w-1 h-9 rounded-full bg-primary-container"></span>
+<span class="w-1 h-13 rounded-full bg-primary"></span>
+<span class="w-1 h-11 rounded-full bg-primary-container"></span>
+<span class="w-1 h-7 rounded-full bg-primary"></span>
+<span class="w-1 h-14 rounded-full bg-primary"></span>
+<!-- Current Playhead Scrubber Pin -->
+<div class="relative flex flex-col items-center">
+<span class="w-1.5 h-14 rounded-full bg-primary shadow-sm"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest shadow-md absolute -top-1.5 flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</span>
+</div>
+<!-- Unplayed Bars -->
+<span class="w-1 h-9 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-6 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-11 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-13 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-8 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-10 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-7 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-4 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-8 rounded-full bg-surface-container-highest"></span>
+<span class="w-1 h-5 rounded-full bg-surface-container-highest"></span>
+</div>
+<!-- Time stamps -->
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm px-1">
+<span id="current-time">01:14</span>
+<span class="text-primary font-semibold">Chorus (វគ្គបន្ទរ)</span>
+<span>03:24</span>
+</div>
+</div>
+<!-- Playback Controls Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">replay_10</span>
+</button>
+<button class="h-12 px-6 rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg flex items-center gap-2 transition-all shadow-md active:scale-95" id="play-pause-btn">
+<span class="material-symbols-outlined text-[22px]" id="play-icon">play_arrow</span>
+<span id="play-text">ចាក់សម្លេង</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">forward_10</span>
+</button>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">repeat</span>
+</button>
+</div>
+</div>
+<!-- Separated Audio Stems Breakdown -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">ផ្នែកសំឡេងនីមួយៗ (Audio Stems)</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">3 Stems Isolated</span>
+</div>
+<div class="space-y-2.5">
+<!-- Stem 1: Vocal -->
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[19px]">record_voice_over</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">សំឡេងច្រៀង (AI Vocal Stem)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sotheary Chea • Natural Tone</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-full hover:bg-surface-container-highest text-on-surface-variant active:scale-90">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-highest text-on-surface-variant active:scale-90">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- Stem 2: Instrumental -->
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[19px]">piano</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">ភ្លេងរៀបចំ (Backing Track)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Acoustic Guitar + Khmer Tro Flute</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-full hover:bg-surface-container-highest text-on-surface-variant active:scale-90">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-highest text-on-surface-variant active:scale-90">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- Stem 3: Synchronized Lyrics -->
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[19px]">subtitles</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">ទំនុកច្រៀងស្របគ្នា (Synced Lyrics)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Khmer Unicode LRC Export Ready</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-full hover:bg-surface-container-highest text-on-surface-variant active:scale-90">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-highest text-on-surface-variant active:scale-90">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Metadata Specifications Bento Card -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col gap-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">លក្ខណៈបច្ចេកទេស និងម៉ូដែល (Engine Info)</h3>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">ម៉ាស៊ីនសំឡេង (Vocal Engine)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">VoxCMP2</span>
+<span class="font-label-sm text-label-sm text-primary">v2.1 High Clarity</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">ម៉ាស៊ីនភ្លេង (Music Synth)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Suno V3.5</span>
+<span class="font-label-sm text-label-sm text-secondary">Cambodian Folk Acoustic</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">រយៈពេលសរុប (Duration)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">03:24 នាទី</span>
+<span class="font-label-sm text-label-sm text-outline">4 Verses + 1 Bridge</span>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">កម្រិតរក្សាសិទ្ធិ (License)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Commercial</span>
+<span class="font-label-sm text-label-sm text-primary">Royalty-Free AI</span>
+</div>
+</div>
+</div>
+<!-- Studio Workflow Actions / Bottom Action Stack -->
+<div class="flex flex-col gap-2.5 pt-1">
+<!-- Primary CTA: Continue in Suno Studio -->
+<button class="w-full h-13 py-3.5 px-4 rounded-full bg-primary hover:bg-on-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_mode</span>
+<span>បន្តច្រៀង ឬកែសម្រួលក្នុង Suno Studio</span>
+</button>
+<!-- Secondary Action Grid: Edit & Export -->
+<div class="grid grid-cols-2 gap-2.5">
+<button class="h-11 px-4 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-all active:scale-95 shadow-sm" id="btn-open-edit-modal">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>កែប្រែទិន្នន័យបទ</span>
+</button>
+<button class="h-11 px-4 rounded-full bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-all active:scale-95 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>ចែករំលែកប្រវត្តិរូប</span>
+</button>
+</div>
+</div>
+<!-- Modal for Metadata Editing (Minimal Light Floating Sheet) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/30 backdrop-blur-sm hidden items-end justify-center p-4" id="edit-metadata-modal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-t-lg rounded-b-lg p-5 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">app_registration</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">កែប្រែចំណងជើង និងអ្នកច្រៀង</h2>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" id="btn-close-modal">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-3">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">ចំណងជើងបទចម្រៀង (Song Title)</label>
+<input class="w-full px-3.5 py-2.5 rounded-DEFAULT bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all" id="input-modal-title" type="text" value="ស្រមោលព្រះច័ន្ទលើស្ទឹងសង្កែ"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">ឈ្មោះអ្នកច្រៀង / សំឡេង (Artist Name)</label>
+<input class="w-full px-3.5 py-2.5 rounded-DEFAULT bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all" id="input-modal-artist" type="text" value="សុធារី ជា"/>
+</div>
+<div class="p-3 bg-surface-container rounded-DEFAULT flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">info</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+            ការផ្លាស់ប្តូរនេះនឹងត្រូវធ្វើសមកាលកម្មដោយស្វ័យប្រវត្តិទៅកាន់ឯកសារ Audio Tags, LRC Lyrics និងកាតាឡុក Khmer Sonic AI របស់អ្នក។
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="flex-1 py-2.5 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg font-medium hover:bg-surface-container-high transition-all active:scale-95" id="btn-cancel-modal">
+          បោះបង់
+        </button>
+<button class="flex-1 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-on-primary-container transition-all active:scale-95 shadow-sm" id="btn-save-modal">
+          រក្សាទុកទិន្នន័យ
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Controls for Song Profile & Auto-Fetch State Demo
+  const playBtn = document.getElementById('play-pause-btn');
+  const playIcon = document.getElementById('play-icon');
+  const playText = document.getElementById('play-text');
+  let isPlaying = false;
+
+  playBtn?.addEventListener('click', () => {
+    isPlaying = !isPlaying;
+    if (isPlaying) {
+      playIcon.innerText = 'pause';
+      playText.innerText = 'ផ្អាកសិន';
+      playBtn.classList.replace('bg-primary-container', 'bg-primary');
+    } else {
+      playIcon.innerText = 'play_arrow';
+      playText.innerText = 'ចាក់សម្លេង';
+      playBtn.classList.replace('bg-primary', 'bg-primary-container');
+    }
+  });
+
+  // State Switcher (Toggling Demonstration of Empty / Auto-Fetching State)
+  const toggleBtn = document.getElementById('toggle-loading-state-btn');
+  const stateLabel = document.getElementById('state-toggle-label');
+  const fetchingCard = document.getElementById('fetching-state-card');
+  let showingFetchState = false;
+
+  toggleBtn?.addEventListener('click', () => {
+    showingFetchState = !showingFetchState;
+    if (showingFetchState) {
+      fetchingCard.classList.remove('hidden');
+      stateLabel.innerText = 'លាក់ការទាញយក';
+      fetchingCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      fetchingCard.classList.add('hidden');
+      stateLabel.innerText = 'បង្ហាញការទាញយក';
+    }
+  });
+
+  // Metadata Edit Modal Actions
+  const modal = document.getElementById('edit-metadata-modal');
+  const openModalBtn = document.getElementById('btn-open-edit-modal');
+  const quickEditBtn = document.getElementById('btn-quick-edit');
+  const closeModalBtn = document.getElementById('btn-close-modal');
+  const cancelModalBtn = document.getElementById('btn-cancel-modal');
+  const saveModalBtn = document.getElementById('btn-save-modal');
+
+  const titleDisplay = document.getElementById('song-title-display');
+  const artistDisplay = document.getElementById('artist-name-display');
+  const titleInput = document.getElementById('input-modal-title');
+  const artistInput = document.getElementById('input-modal-artist');
+
+  const openModal = () => {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  };
+
+  const closeModal = () => {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  };
+
+  openModalBtn?.addEventListener('click', openModal);
+  quickEditBtn?.addEventListener('click', openModal);
+  closeModalBtn?.addEventListener('click', closeModal);
+  cancelModalBtn?.addEventListener('click', closeModal);
+
+  saveModalBtn?.addEventListener('click', () => {
+    if (titleInput && titleInput.value.trim() !== '') {
+      titleDisplay.textContent = titleInput.value;
+    }
+    if (artistInput && artistInput.value.trim() !== '') {
+      artistDisplay.innerHTML = `${artistInput.value} <span class="text-outline text-label-sm font-light">• (Model: VoxCMP2 v2.1)</span>`;
+    }
+    closeModal();
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary bg-primary-fixed/25 rounded-full font-bold"><div class="h-16 px-space-md flex items-center justify-around gap-space-xs"><a class="flex flex-col items-center justify-center min-w-[72px] h-11 px-space-sm rounded-full text-on-surface-variant transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-sm text-label-sm leading-none mt-0.5">ទំព័រដើម</span></a><a class="flex flex-col items-center justify-center min-w-[72px] h-11 px-space-sm rounded-full text-on-surface-variant transition-all" data-path="sound-clone" href="#"><span class="material-symbols-outlined text-[20px]">mic</span><span class="font-label-sm text-label-sm leading-none mt-0.5">ក្លូនសំឡេង</span></a><a class="flex flex-col items-center justify-center min-w-[72px] h-11 px-space-sm rounded-full text-on-surface-variant transition-all" data-path="lyric-generator" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="font-label-sm text-label-sm leading-none mt-0.5">តែងទំនុក</span></a><a class="flex flex-col items-center justify-center min-w-[72px] h-11 px-space-sm rounded-full text-on-surface-variant transition-all" data-path="studio-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-sm text-label-sm leading-none mt-0.5">ការកំណត់</span></a></div></nav></body></html>

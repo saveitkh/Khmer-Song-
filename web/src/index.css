@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Telegram injects theme vars; we keep the light studio canvas regardless,
+       but expose the viewport height it reports for correct sizing in-app. */
+    --tg-viewport-height: 100dvh;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #f8f9ff;
+    color: #121c2a;
+  }
+
+  body {
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: "Plus Jakarta Sans", "Kantumruy Pro", "Battambang", sans-serif;
+  }
+
+  /* Khmer script stacks sub-consonants and diacritics; never clip them.
+     DESIGN.md requires line-height ≥ 1.4–1.6× and ≥15px body. Any element
+     carrying Khmer text should use .khmer-text. */
+  .khmer-text,
+  [lang="km"] {
+    font-family: "Kantumruy Pro", "Battambang", "Plus Jakarta Sans", sans-serif;
+    line-height: 1.55;
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+@layer components {
+  .material-symbols-outlined {
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+  }
+}
+
+/* Hide scrollbars for the app-like feel the mockups use. */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Live frequency-meter / idle waveform bars. */
+@keyframes bar-pulse {
+  0%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+.bar-animate {
+  transform-origin: center;
+  animation: bar-pulse 1s ease-in-out infinite;
+}
