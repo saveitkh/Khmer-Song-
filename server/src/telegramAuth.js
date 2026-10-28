@@ -71,9 +71,16 @@ export function authMiddleware(req, res, next) {
     botToken: config.botToken,
     maxAgeS: config.initDataMaxAgeS,
   });
-  if (!user?.id) {
-    return res.status(401).json({ code: "unauthorized", message: "ការផ្ទៀងផ្ទាត់បរាជ័យ — សូមបើកកម្មវិធីពី Telegram" });
+  if (user?.id) {
+    req.tgUser = user;
+    return next();
   }
-  req.tgUser = user;
-  next();
+  // Browser-preview mode: no valid Telegram auth, but ALLOW_BROWSER_DEMO lets
+  // anyone open the URL in a plain browser and explore the app as a shared demo
+  // user (mock data). Keep it OFF in real production.
+  if (config.allowBrowserDemo) {
+    req.tgUser = { ...DEV_USER };
+    return next();
+  }
+  return res.status(401).json({ code: "unauthorized", message: "ការផ្ទៀងផ្ទាត់បរាជ័យ — សូមបើកកម្មវិធីពី Telegram" });
 }

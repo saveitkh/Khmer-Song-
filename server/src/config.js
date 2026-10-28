@@ -19,6 +19,10 @@ export const config = {
   // Auth
   botToken: str("TELEGRAM_BOT_TOKEN"),
   initDataMaxAgeS: int("TELEGRAM_INITDATA_MAX_AGE_S", 86400),
+  // When on, requests without valid Telegram initData are served as a shared
+  // demo user (mock data) so the app can be opened in a plain browser. OFF for
+  // real production.
+  allowBrowserDemo: onOff("ALLOW_BROWSER_DEMO", false),
   get devMode() {
     // No bot token → dev mode (fake user, no signature check). Never in prod.
     return !this.botToken;
@@ -69,7 +73,7 @@ export function enginesSummary() {
     voice: config.voiceProvider,
     lyrics: config.lyricsProvider,
     music: config.musicProvider,
-    mode: config.devMode ? "dev-no-auth" : "telegram-auth",
+    mode: config.devMode ? "dev-no-auth" : config.allowBrowserDemo ? "telegram-auth+browser-demo" : "telegram-auth",
     storage: config.r2.configured ? "r2" : "mock",
   };
 }
