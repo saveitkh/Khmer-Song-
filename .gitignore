@@ -8,3 +8,8 @@ web/dist/
 .DS_Store
 server/data/
 coverage/
+
+# run_pc.bat runtime artifacts (Windows local run)
+logs/
+tools/
+.built_head
